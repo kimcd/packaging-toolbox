@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0079C1BC2829C5AD0045EAD7 /* ASD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0079C1BA2829C5AD0045EAD7 /* ASD.cpp */; };
+		0079C1C6282AA1B60045EAD7 /* SCRATCH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0079C1C5282AA1B60045EAD7 /* SCRATCH.cpp */; };
+		0079C1C8282AA1D20045EAD7 /* main_driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0079C1C7282AA1D20045EAD7 /* main_driver.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +28,9 @@
 		0079C1B02829C5970045EAD7 /* packaging-toolbox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "packaging-toolbox"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0079C1BA2829C5AD0045EAD7 /* ASD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ASD.cpp; path = ../../src/ASD.cpp; sourceTree = "<group>"; };
 		0079C1BB2829C5AD0045EAD7 /* ASD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASD.h; path = ../../src/ASD.h; sourceTree = "<group>"; };
+		0079C1C4282AA1990045EAD7 /* SCRATCH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SCRATCH.h; path = ../../src/SCRATCH.h; sourceTree = "<group>"; };
+		0079C1C5282AA1B60045EAD7 /* SCRATCH.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = SCRATCH.cpp; path = ../../src/SCRATCH.cpp; sourceTree = "<group>"; };
+		0079C1C7282AA1D20045EAD7 /* main_driver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main_driver.cpp; path = ../../src/main_driver.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,9 @@
 			children = (
 				0079C1BA2829C5AD0045EAD7 /* ASD.cpp */,
 				0079C1BB2829C5AD0045EAD7 /* ASD.h */,
+				0079C1C4282AA1990045EAD7 /* SCRATCH.h */,
+				0079C1C5282AA1B60045EAD7 /* SCRATCH.cpp */,
+				0079C1C7282AA1D20045EAD7 /* main_driver.cpp */,
 			);
 			path = "packaging-toolbox";
 			sourceTree = "<group>";
@@ -121,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0079C1C6282AA1B60045EAD7 /* SCRATCH.cpp in Sources */,
 				0079C1BC2829C5AD0045EAD7 /* ASD.cpp in Sources */,
+				0079C1C8282AA1D20045EAD7 /* main_driver.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

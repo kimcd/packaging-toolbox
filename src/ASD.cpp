@@ -12,7 +12,11 @@ using std::cerr;
 using std::endl;
 
 
-ASD::ASD(vector<unsigned int>& frequencies, vector<double>& asd)
+const std::vector<unsigned int> ASD::GEVS_FREQUENCIES = {20, 50, 800, 2000};
+const std::vector<double> ASD::GEVS_ASD = {0.026, 0.16, 0.16, .026};
+
+
+ASD::ASD(vector<unsigned int> frequencies, vector<double> asd)
 : frequencies_hz(validate_frequency_input(frequencies)),
   asd_g2_hz(validate_asd_input(asd))
 {
@@ -20,7 +24,8 @@ ASD::ASD(vector<unsigned int>& frequencies, vector<double>& asd)
 }
 
 
-vector<unsigned int> ASD::validate_frequency_input(const vector<unsigned int>& frequencies) const
+vector<unsigned int> ASD::validate_frequency_input(
+		const vector<unsigned int>& frequencies) const
 {
 	// check that frequencies are valid. how?
 	return frequencies;
@@ -53,7 +58,11 @@ double ASD::compute_rms() const
 }
 
 
-double compute_area(const double f1, const double f2, const double asd1, const double asd2)
+double compute_area(
+		const double f1,
+		const double f2,
+		const double asd1,
+		const double asd2)
 {
 	const double EPS = 0.0000001f;
 
@@ -63,7 +72,7 @@ double compute_area(const double f1, const double f2, const double asd1, const d
 
 	double area;
 
-	// if
+	// if m = -10log(2), avoid divide by zero.
 	if(fabs( m - (-10 * log10(2)) ) < EPS)
 	{
 
@@ -71,8 +80,6 @@ double compute_area(const double f1, const double f2, const double asd1, const d
 
 	} else
 	{
-
-		cerr << (f2 - (f1 * pow( (f1 / f2), (m / (10 * log10(2))) ))) << endl;
 
 		area = 10 * log10(2) * ( asd2 / (10 * log10(2) + m) )
 				*

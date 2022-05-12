@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "SCRATCH.h"
+#include "Component.h"
 
 #include <vector>
 using std::vector;
@@ -25,6 +26,32 @@ using std::stringstream;
 #include <iostream>
 using std::cerr;
 using std::endl;
+using std::cout;
+
+void test_component()
+{
+    // read in a csv file
+    string file_path = "/Users/christopherkim/Documents/cpp/packaging-toolbox/src/component_database.csv";
+    
+    vector<vector<string>> my_csv;
+    
+    my_csv = read_in_csv2(file_path);
+    
+    // create a component type
+    for(auto& row : my_csv)
+    {
+        cout << row[0] << endl; 
+        // first element = part number
+        
+    }
+        
+    
+    // cout it
+
+    
+    
+}
+
 
 
 void test_read_csv() {
@@ -33,7 +60,7 @@ void test_read_csv() {
     
     vector<vector<string>> my_csv;
     
-    my_csv = read_in_csv(file_path);
+    my_csv = read_in_csv2(file_path);
     
     print_vector_vector(my_csv);
     
@@ -42,7 +69,7 @@ void test_read_csv() {
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    test_read_csv();
+    test_component();
     return 0;
 }
 

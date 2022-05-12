@@ -19,5 +19,10 @@ void search_part_csv(std::string& part_number);
 
 void print_vector_vector(std::vector<std::vector<std::string>>& vector);
 
+
+void print_vector_(std::vector<std::string>& vector);
+
+std::vector<std::vector<std::string>> read_in_csv2(const std::string& file_name);
+
 #endif /* SCRATCH_h */
 

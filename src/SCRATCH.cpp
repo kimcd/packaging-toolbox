@@ -16,6 +16,7 @@ using std::string;
 #include<fstream>
 using std::ifstream;
 using std::ios;
+using std::fstream;
 
 #include<sstream>
 using std::stringstream;
@@ -53,6 +54,42 @@ void print_vector_vector(vector<vector<string>>& vector)
     }
 }
 
+void print_vector(vector<string>& vector)
+{
+    for(auto& ele : vector)
+    {
+        cerr << ele << ", ";
+    }
+}
+
+
+vector<vector<string>> read_in_csv2(const string& file_path)
+{
+    vector<vector<string>> content;
+    vector<string> row;
+    string line, word;
+
+    fstream file (file_path, ios::in);
+    if(file.is_open())
+    {
+        while(getline(file, line))
+        {
+            row.clear();
+            
+            stringstream str(line);
+            
+            while(getline(str, word, ','))
+                row.push_back(word);
+                content.push_back(row);
+                }
+    }
+    else
+    cerr<<"Could not open the file\n";
+    
+    return content; 
+}
+
+
 vector<vector<string>> read_in_csv(const string& file_path)
 {
     
@@ -65,6 +102,7 @@ vector<vector<string>> read_in_csv(const string& file_path)
         cerr << "file could not be opened" << endl;
         exit(EXIT_FAILURE);
     }
+    
     
     string line;
     string column_name;

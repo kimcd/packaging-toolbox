@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000F6206282D2C25000B4077 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 000F6205282D2C25000B4077 /* Component.cpp */; };
+		002EB7F0282C8FD400A7CDC9 /* Steinberg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 002EB7EF282C8FD400A7CDC9 /* Steinberg.cpp */; };
 		0079C1BC2829C5AD0045EAD7 /* ASD.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0079C1BA2829C5AD0045EAD7 /* ASD.cpp */; };
 		0079C1C6282AA1B60045EAD7 /* SCRATCH.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0079C1C5282AA1B60045EAD7 /* SCRATCH.cpp */; };
 		0079C1C8282AA1D20045EAD7 /* main_driver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0079C1C7282AA1D20045EAD7 /* main_driver.cpp */; };
@@ -25,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		000F6204282D2C11000B4077 /* Component.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Component.h; path = ../../src/Component.h; sourceTree = "<group>"; };
+		000F6205282D2C25000B4077 /* Component.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Component.cpp; path = ../../src/Component.cpp; sourceTree = "<group>"; };
+		002EB7EE282C8FBD00A7CDC9 /* Steinberg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Steinberg.h; path = ../../src/Steinberg.h; sourceTree = "<group>"; };
+		002EB7EF282C8FD400A7CDC9 /* Steinberg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Steinberg.cpp; path = ../../src/Steinberg.cpp; sourceTree = "<group>"; };
 		0079C1B02829C5970045EAD7 /* packaging-toolbox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "packaging-toolbox"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0079C1BA2829C5AD0045EAD7 /* ASD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ASD.cpp; path = ../../src/ASD.cpp; sourceTree = "<group>"; };
 		0079C1BB2829C5AD0045EAD7 /* ASD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASD.h; path = ../../src/ASD.h; sourceTree = "<group>"; };
@@ -67,6 +73,10 @@
 				0079C1BB2829C5AD0045EAD7 /* ASD.h */,
 				0079C1C4282AA1990045EAD7 /* SCRATCH.h */,
 				0079C1C5282AA1B60045EAD7 /* SCRATCH.cpp */,
+				002EB7EE282C8FBD00A7CDC9 /* Steinberg.h */,
+				002EB7EF282C8FD400A7CDC9 /* Steinberg.cpp */,
+				000F6204282D2C11000B4077 /* Component.h */,
+				000F6205282D2C25000B4077 /* Component.cpp */,
 				0079C1C7282AA1D20045EAD7 /* main_driver.cpp */,
 			);
 			path = "packaging-toolbox";
@@ -130,8 +140,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0079C1C6282AA1B60045EAD7 /* SCRATCH.cpp in Sources */,
+				002EB7F0282C8FD400A7CDC9 /* Steinberg.cpp in Sources */,
 				0079C1BC2829C5AD0045EAD7 /* ASD.cpp in Sources */,
 				0079C1C8282AA1D20045EAD7 /* main_driver.cpp in Sources */,
+				000F6206282D2C25000B4077 /* Component.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

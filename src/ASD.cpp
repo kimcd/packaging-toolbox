@@ -16,7 +16,9 @@ ASD::ASD(vector<unsigned int>& frequencies, vector<double>& asd)
 : frequencies_hz(validate_frequency_input(frequencies)),
   asd_g2_hz(validate_asd_input(asd))
 {
-	g_rms = compute_rms();
+	g_rms = compute_rms();  // computed at construction. rarely (almost never)
+                            // do we ever think of an ASD and not think of its
+                            // g_rms. so compute at construction. 
 }
 
 

@@ -12,8 +12,12 @@
 #define SCRATCH_h
 
 void test_read_csv();
+
 std::vector<std::vector<std::string>> read_in_csv(const std::string& file_name);
+
 void search_part_csv(std::string& part_number);
+
+void print_vector_vector(std::vector<std::vector<std::string>>& vector);
 
 #endif /* SCRATCH_h */
 

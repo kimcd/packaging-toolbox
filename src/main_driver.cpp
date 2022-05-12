@@ -27,10 +27,9 @@ using std::cerr;
 using std::endl;
 
 
-
 void test_read_csv() {
     
-    string file_path = "/Users/christopherkim/Documents/cpp/component-database/component-database/component_database.csv";
+    string file_path = "/Users/christopherkim/Documents/cpp/packaging-toolbox/src/component_database.csv";
     
     vector<vector<string>> my_csv;
     

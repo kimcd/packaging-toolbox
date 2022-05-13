@@ -29,6 +29,7 @@
 /* Begin PBXFileReference section */
 		000F6204282D2C11000B4077 /* Component.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Component.h; path = ../../src/Component.h; sourceTree = "<group>"; };
 		000F6205282D2C25000B4077 /* Component.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Component.cpp; path = ../../src/Component.cpp; sourceTree = "<group>"; };
+		000F6207282E76E1000B4077 /* Components.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Components.h; path = ../../src/Components.h; sourceTree = "<group>"; };
 		002EB7EE282C8FBD00A7CDC9 /* Steinberg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Steinberg.h; path = ../../src/Steinberg.h; sourceTree = "<group>"; };
 		002EB7EF282C8FD400A7CDC9 /* Steinberg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Steinberg.cpp; path = ../../src/Steinberg.cpp; sourceTree = "<group>"; };
 		0079C1B02829C5970045EAD7 /* packaging-toolbox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "packaging-toolbox"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +78,7 @@
 				002EB7EF282C8FD400A7CDC9 /* Steinberg.cpp */,
 				000F6204282D2C11000B4077 /* Component.h */,
 				000F6205282D2C25000B4077 /* Component.cpp */,
+				000F6207282E76E1000B4077 /* Components.h */,
 				0079C1C7282AA1D20045EAD7 /* main_driver.cpp */,
 			);
 			path = "packaging-toolbox";

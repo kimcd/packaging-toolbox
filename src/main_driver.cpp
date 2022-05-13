@@ -30,26 +30,7 @@ using std::cout;
 
 void test_component()
 {
-    // read in a csv file
-    string file_path = "/Users/christopherkim/Documents/cpp/packaging-toolbox/src/component_database.csv";
-    
-    vector<vector<string>> my_csv;
-    
-    my_csv = read_in_csv2(file_path);
-    
-    // create a component type
-    for(auto& row : my_csv)
-    {
-        cout << row[0] << endl; 
-        // first element = part number
-        
-    }
-        
-    
-    // cout it
-
-    
-    
+    design_component_class();
 }
 
 

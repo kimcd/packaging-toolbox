@@ -35,6 +35,7 @@ public:
               double width);
     
     
+
     inline std::string get_part_number() const
     {
         return part_number;
@@ -51,6 +52,17 @@ public:
     {
         return y;
     }
+    
+    /*
+     @brief Overriding the copy assignment for troubleshooting
+     */
+    Component(const Component& rhs);
+    
+    /*
+     @brief Overriding the copy constructor for troubleshooting
+     */
+    Component& operator=(const Component& rhs);
+    
     
     
 private:

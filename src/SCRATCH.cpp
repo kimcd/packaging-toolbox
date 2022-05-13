@@ -5,7 +5,7 @@
 //  Created by Christopher Kim on 5/9/22.
 //  Copyright © 2022 Christopher Kim. All rights reserved.
 //
-
+#include "Component.h"
 #include "SCRATCH.h"
 #include <vector>
 using std::vector;
@@ -24,6 +24,7 @@ using std::stringstream;
 #include <iostream>
 using std::cerr;
 using std::endl;
+using std::cout;
 
 #include <regex>
 
@@ -62,6 +63,30 @@ void print_vector(vector<string>& vector)
     }
 }
 
+
+void design_component_class()
+{
+    string file_path = "/Users/christopherkim/Documents/cpp/packaging-toolbox/src/component_database.csv";
+    
+    vector<vector<string>> my_csv;
+    
+    my_csv = read_in_csv2(file_path);
+    
+    // create a component type
+    for(auto& row : my_csv)
+    {
+        cout << row[0] << endl;
+        // first element = part number
+        Component my_comp(
+        
+    }
+    
+    // do calculations and push it back into csv?
+    
+    
+    // open a csv and add to it
+    
+}
 
 vector<vector<string>> read_in_csv2(const string& file_path)
 {

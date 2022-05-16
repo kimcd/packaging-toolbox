@@ -10,6 +10,7 @@
 
 #include <iostream>
 #include "SCRATCH.h"
+#include "Component.h"
 
 #include <vector>
 using std::vector;
@@ -27,16 +28,21 @@ using std::stringstream;
 #include <iostream>
 using std::cerr;
 using std::endl;
+using std::cout;
 
+void test_component()
+{
+    design_simple_search_and_data_entry();
+}
 
 
 void test_read_csv() {
     
-    string file_path = "/Users/christopherkim/Documents/cpp/component-database/component-database/component_database.csv";
+    string file_path = "/Users/christopherkim/Documents/cpp/packaging-toolbox/src/component_database.csv";
     
     vector<vector<string>> my_csv;
     
-    my_csv = read_in_csv(file_path);
+    my_csv = read_in_csv2(file_path);
     
     print_vector_vector(my_csv);
     
@@ -135,7 +141,8 @@ void plus_xdb(vector<double>& some_asd, double some_db)
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    test_read_csv();
+    //test_component();
+    test_database_manager();
     return 0;
 }
 

@@ -30,9 +30,8 @@ using std::cout;
 
 void test_component()
 {
-    design_component_class();
+    design_simple_search_and_data_entry();
 }
-
 
 
 void test_read_csv() {
@@ -50,7 +49,8 @@ void test_read_csv() {
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    test_component();
+    //test_component();
+    test_database_manager();
     return 0;
 }
 

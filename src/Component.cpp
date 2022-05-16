@@ -1,8 +1,9 @@
 /*
  Wishlist (prioritized - find the most powerful and bite-sized.)
  - Perform a Steinberg analysis given all parameters.
- - Feed a list of part numbers, auto-generate component data.
+ - [x] Feed a list of part numbers, auto-generate component data.
  - Feed a csv of previous parts and append to the database.csv.
+ - basic data for now: part number, part type, package type, derated temp, temp
 
  4.
  
@@ -14,6 +15,7 @@
  
  2. database.
  
+
  
  */
 
@@ -28,6 +30,13 @@ using std::cout;
 #include <string>
 using std::string;
 
+#include <vector>
+using std::vector;
+
+Component::Component(vector<vector<string>>& data)
+{
+    
+}
 
 
 // Maybe instead of this, pass a Component_Database object?

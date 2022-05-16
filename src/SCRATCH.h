@@ -27,7 +27,11 @@ void print_vector_(std::vector<std::string>& vector);
 
 std::vector<std::vector<std::string>> read_in_csv2(const std::string& file_name);
 
-void design_component_class(); 
+void design_simple_search_and_data_entry();
+
+void search_database_for_match(std::vector<std::string>& token);
+
+void test_database_manager(); 
 
 #endif /* SCRATCH_h */
 

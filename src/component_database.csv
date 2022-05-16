@@ -1,3 +1,15 @@
 part number,component type,package type,x,y
-ae612PNB,inductor,na,4,3
+ae612pnb,inductor,smd2,4,3
+isr72,microcircuit,qfp,2,3
+ae612pnb,inductor,na,4,3
 isr71,microcircuit,qfp,2,3
+AD8229S
+RH1078MW
+RH1021-5
+UT54ACS14E
+LM6172AMGW
+1N5294UR-1
+M39016/29-058M
+A250F
+CPH3910
+AD829SQ

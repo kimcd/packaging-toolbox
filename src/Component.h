@@ -22,6 +22,8 @@
 #define Component_h
 
 #include <iostream>
+#include <string>
+#include <vector>
 
 class Component
 {

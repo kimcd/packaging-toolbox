@@ -24,7 +24,7 @@ public:
     
     Database_Manager(); 
     
-    static const std::string DATABASE_FILEPATH;
+    static const char DATABASE_FILEPATH[];
     // maybe the results of a database-read should be static const OR make whoel class singleton
     
     /*

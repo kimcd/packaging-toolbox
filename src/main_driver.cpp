@@ -30,6 +30,9 @@ using std::cerr;
 using std::endl;
 using std::cout;
 
+#include <algorithm>
+using std::transform;
+
 void test_component()
 {
     design_simple_search_and_data_entry();

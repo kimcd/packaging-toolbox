@@ -14,9 +14,6 @@ using std::endl;
 const std::vector<unsigned int> ASD::GEVS_FREQUENCIES = {20, 50, 800, 2000};
 const std::vector<double> ASD::GEVS_ASD = {0.026, 0.16, 0.16, .026};
 
-const std::vector<unsigned int> ASD::GEVS_FREQUENCIES = {20, 50, 800, 2000};
-const std::vector<double> ASD::GEVS_ASD = {0.026, 0.16, 0.16, .026};
-
 
 ASD::ASD(vector<unsigned int> frequencies, vector<double> asd)
 : frequencies_hz(validate_frequency_input(frequencies)),

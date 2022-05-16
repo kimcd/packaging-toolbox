@@ -1,3 +1,9 @@
+/*
+
+ Using nomenclature following FEMCI. Spec is called ASD.
+ https://femci.gsfc.nasa.gov/random/randomequations.html
+
+ */
 
 
 #ifndef SRC_ASD_H_
@@ -10,6 +16,14 @@ class ASD
 {
 public:
 
+	/*
+	 @brief Static member for GEVS.
+
+	 NOTE static members are declared within the class definition, but defined
+	 outside the class.
+	 */
+	static const std::vector<unsigned int> GEVS_FREQUENCIES;
+	static const std::vector<double> GEVS_ASD;
 
 	/*
 	 @brief Construct with parameters
@@ -44,10 +58,12 @@ private:
 	double compute_rms() const;
 
 
-	std::vector<unsigned int> validate_frequency_input(const std::vector<unsigned int>& frequencies) const;
+	std::vector<unsigned int> validate_frequency_input(
+			const std::vector<unsigned int>& frequencies) const;
 
 
-	std::vector<double> validate_asd_input(const std::vector<double>& asd) const;
+	std::vector<double> validate_asd_input(
+			const std::vector<double>& asd) const;
 
 
 

@@ -11,7 +11,6 @@ using std::vector;
 using std::cerr;
 using std::endl;
 
-// did this work?
 const std::vector<unsigned int> ASD::GEVS_FREQUENCIES = {20, 50, 800, 2000};
 const std::vector<double> ASD::GEVS_ASD = {0.026, 0.16, 0.16, .026};
 

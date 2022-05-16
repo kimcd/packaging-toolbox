@@ -1,3 +1,9 @@
+/*
+
+ Using nomenclature following FEMCI. Spec is called ASD.
+ https://femci.gsfc.nasa.gov/random/randomequations.html
+
+ */
 
 
 #ifndef SRC_ASD_H_

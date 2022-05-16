@@ -11,6 +11,8 @@ using std::vector;
 using std::cerr;
 using std::endl;
 
+const std::vector<unsigned int> ASD::GEVS_FREQUENCIES = {20, 50, 800, 2000};
+const std::vector<double> ASD::GEVS_ASD = {0.026, 0.16, 0.16, .026};
 
 const std::vector<unsigned int> ASD::GEVS_FREQUENCIES = {20, 50, 800, 2000};
 const std::vector<double> ASD::GEVS_ASD = {0.026, 0.16, 0.16, .026};
@@ -93,3 +95,9 @@ double compute_area(
 
 }
 
+/*
+vector<double> plus_6_db(const double asd)
+{
+	pow(10, 6/20)
+
+}*/

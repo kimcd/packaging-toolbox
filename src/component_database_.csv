@@ -1,5 +1,5 @@
 ,,,,,,,,,,
-,,,max junc,derating,,TJC,TCB,TJB,length,width
+,,,max junc,derating,,TJC,TCB,TJB,length,width,blah
 pn,part classification,pkg,°C,,TIM,c/w,c/w,c/w,in,in
 ad8229s,monolithic microcircuit,CDFP3-F14,150,110,a/bn,27,7.752180616,34.75218062,0.39,0.26
 rh1078mw,monolithic microcircuit,10-CFP,125,85,none,40,231.2599681,271.2599681,0.26,0.3

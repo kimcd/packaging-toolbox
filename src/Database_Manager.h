@@ -26,6 +26,7 @@ public:
     
     static const char DATABASE_FILEPATH[];
     // maybe the results of a database-read should be static const OR make whoel class singleton
+    static const char DATABASE_TEMP[];
     
     /*
      @brief Given a token (part number), return true for a match, else false.

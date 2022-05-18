@@ -35,7 +35,10 @@ using std::tolower;
 
 
 //const char Database_Manager::DATABASE_FILEPATH[] = "/users/christopherkim/documents/cpp/packaging-toolbox/src/component_database_.csv";
+//const char Database_Manager::DATABASE_TEMP[] = "/users/christopherkim/documents/cpp/packaging-toolbox/src/temp.csv";
 const char Database_Manager::DATABASE_FILEPATH[] = "/Users/kimcd1/git/packaging-toolbox/src/component_database_.csv";
+const char Database_Manager::DATABASE_TEMP[] = "/Users/kimcd1/git/packaging-toolbox/src/temp.csv";
+
 
 Database_Manager::Database_Manager()
 :database(read_database())
@@ -117,10 +120,8 @@ void Database_Manager::rewrite_database() const
     //char temp_filepath[] = "/Users/christopherkim/Documents/cpp/packaging-toolbox/src/temp.csv";
     //char component_database_filepath[] = "/Users/christopherkim/Documents/cpp/packaging-toolbox/src/component_database_.csv";
 
-    char temp_filepath[] = "/Users/kimcd1/git/packaging-toolbox/src/temp.csv";
-    char component_database_filepath[] = "/Users/kimcd1/git/packaging-toolbox/src/component_database_.csv";
 
-    fout.open(temp_filepath, ios::out);
+    fout.open(Database_Manager::DATABASE_TEMP, ios::out);
 
     for(auto& row : database)
     {
@@ -140,11 +141,11 @@ void Database_Manager::rewrite_database() const
     fout.close();
     
     // removing the existing file
-    remove(component_database_filepath);
+    remove(Database_Manager::DATABASE_FILEPATH);
     
     // renaming the updated file with the existing file name
-    rename(temp_filepath,
-    		component_database_filepath);
+    rename(Database_Manager::DATABASE_TEMP,
+    		Database_Manager::DATABASE_FILEPATH);
     
 }
 

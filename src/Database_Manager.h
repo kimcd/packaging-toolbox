@@ -77,11 +77,12 @@ private:
      @brief Encode the fields of the database as scoped enum, so fields aren't
      hard-coded in the class definition.
      */
-    enum class Field
+    enum class Column
     {
         PART_NUMBER = 0,
-        PROCUREMENT_SPEC = 1,
-        PART_TYPE = 2  // follow EEE-INST-002 nomenclature 
+        PART_TYPE = 1,  // follow EEE-INST-002 nomenclature
+        PKG_TYPE = 2, 
+        PROCUREMENT_SPEC = 9,
         
     }; 
     

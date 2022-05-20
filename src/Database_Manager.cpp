@@ -34,10 +34,10 @@ using std::transform;
 using std::tolower;
 
 
-//const char Database_Manager::DATABASE_FILEPATH[] = "/users/christopherkim/documents/cpp/packaging-toolbox/src/component_database_.csv";
-//const char Database_Manager::DATABASE_TEMP[] = "/users/christopherkim/documents/cpp/packaging-toolbox/src/temp.csv";
-const char Database_Manager::DATABASE_FILEPATH[] = "/Users/kimcd1/git/packaging-toolbox/src/component_database_.csv";
-const char Database_Manager::DATABASE_TEMP[] = "/Users/kimcd1/git/packaging-toolbox/src/temp.csv";
+const char Database_Manager::DATABASE_FILEPATH[] = "/users/christopherkim/documents/cpp/packaging-toolbox/src/component_database_.csv";
+const char Database_Manager::DATABASE_TEMP[] = "/users/christopherkim/documents/cpp/packaging-toolbox/src/temp.csv";
+//const char Database_Manager::DATABASE_FILEPATH[] = "/Users/kimcd1/git/packaging-toolbox/src/component_database_.csv";
+//const char Database_Manager::DATABASE_TEMP[] = "/Users/kimcd1/git/packaging-toolbox/src/temp.csv";
 
 
 Database_Manager::Database_Manager()
@@ -94,12 +94,12 @@ vector<vector<string>> read_database()
     
 }
 
-
+// make all part numbers lowercase
 void Database_Manager::lowercase()
 {
     for(auto& row : database)
     {
-        int pn_field = static_cast<int>(Database_Manager::Field::PART_NUMBER);
+        int pn_field = static_cast<int>(Database_Manager::Column::PART_NUMBER);
         
         transform(row[pn_field].begin(),
                   row[pn_field].end(),
@@ -152,13 +152,18 @@ void Database_Manager::rewrite_database() const
 
 void Database_Manager::print_database() const
 {
+    size_t i;
+    
     for (auto& row : database)
     {
-        for (auto& field : row)
+        for(i = 0; i < row.size() - 1; ++i)
         {
-            cout << field << ",";
+            cout << row[i] << ",";
         }
+    
+        // final row entry will end with newline character instead of comma
+        cout << row[i] << "\n";
         
-        cout << "\n";
+        //cout << "\n";
     }
 }

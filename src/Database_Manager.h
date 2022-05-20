@@ -70,7 +70,7 @@ public:
      */
     void rewrite_database() const;
     
-    
+    //
 private:
     
     /*

@@ -112,7 +112,7 @@ void Database_Manager::lowercase()
     }
 }
 
-
+//
 void Database_Manager::rewrite_database() const
 {
     fstream fout;
